@@ -1,6 +1,6 @@
 import math
 
-x = float(input('x ='))
+x = float(input('X = '))
 
 A = x**2*math.sin(x/2)
 

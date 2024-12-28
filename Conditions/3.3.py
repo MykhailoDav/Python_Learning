@@ -17,4 +17,16 @@ else:
             else:
                 Y = - ((X - 2*R)/(6 - 2*R))
 
+if X <= -R:
+    Y2 = R
+elif -R < X <= 0:
+    Y2 = -(1/2)*X
+elif 0 < X <= R:
+    Y2 = R - math.sqrt(R**2 - X**2)
+elif R < X <= 6:
+    Y2 = math.sqrt((R)**2 - (X - R)**2)
+else:
+    Y2 = - ((X - 2*R)/(6 - 2*R))
+
 print(Y)
+print(Y2)
